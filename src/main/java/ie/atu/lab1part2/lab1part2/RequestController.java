@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RequestController {
 
-    @GetMapping("/hello")
+    @GetMapping("/hello") //annotate
     public String hello() {
-        return "Hello ! How is your day going ?";
+        return "Hello ! How is your day going ?"; //method
     }
 
     @GetMapping("/greet/{name}")
