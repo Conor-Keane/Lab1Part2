@@ -21,6 +21,11 @@ public class CalculatorController {
             case "Divide": num1 = num1 / num2;
             break;
 
+            case "add": num1 = num1 + num2;
+            break;
+
+            case "Add": num1 = num1 + num2;
+            break;
         }
         return num1;
     }
