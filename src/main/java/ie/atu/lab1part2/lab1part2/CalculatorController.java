@@ -10,4 +10,5 @@ public class CalculatorController {
     public String calculate(@RequestParam int num1, @RequestParam int num2, @RequestParam String operation) {
         return "Num1 = " + num1 + "Num2 = " + num2;
     }
+
 }
