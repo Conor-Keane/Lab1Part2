@@ -41,6 +41,14 @@ public class CalculatorClass {
             case "Multiply":
                 this.result = num1 + num2;
                 break;
+
+            case "Divide":
+                this.result = num1 / num2;
+                break;
+
+            case "divide":
+                this.result = num1 + num2;
+                break;
         }
 
     }
