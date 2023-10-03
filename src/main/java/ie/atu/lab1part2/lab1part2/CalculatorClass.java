@@ -35,11 +35,11 @@ public class CalculatorClass {
 
         switch(operation) {
             case "multiply":
-                this.result = num1 + num2;
+                this.result = num1 * num2;
                 break;
 
             case "Multiply":
-                this.result = num1 + num2;
+                this.result = num1 * num2;
                 break;
 
             case "Divide":
@@ -47,6 +47,14 @@ public class CalculatorClass {
                 break;
 
             case "divide":
+                this.result = num1 / num2;
+                break;
+
+            case "Add":
+                this.result = num1 + num2;
+                break;
+
+            case "add":
                 this.result = num1 + num2;
                 break;
         }
