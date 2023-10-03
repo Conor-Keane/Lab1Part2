@@ -57,6 +57,14 @@ public class CalculatorClass {
             case "add":
                 this.result = num1 + num2;
                 break;
+
+            case "Division":
+                this.result = num1 - num2;
+                break;
+
+            case "division":
+                this.result = num1 - num2;
+                break;
         }
 
     }
