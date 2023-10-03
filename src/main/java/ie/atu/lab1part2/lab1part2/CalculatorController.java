@@ -7,38 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorController {
 
-    public int operation(int num1, int num2, String operation) {
-        switch(operation) {
-            case "multiply": num1 = num1 * num2;
-            break;
-
-            case "Multiply": num1 = num1 * num2;
-            break;
-
-            case "divide": num1 = num1 / num2;
-            break;
-
-            case "Divide": num1 = num1 / num2;
-            break;
-
-            case "add": num1 = num1 + num2;
-            break;
-
-            case "Add": num1 = num1 + num2;
-            break;
-
-            case "Subtract": num1 = num1 - num2;
-            break;
-
-            case "subtract": num1 = num1 - num2;
-            break;
-
-        }
-        return num1;
-    }
     @GetMapping("/calculate")
-    public String calculate(@RequestParam int num1, @RequestParam int num2, @RequestParam String operation) {
-        return "Num1 = " + num1 + "Num2 = " + num2;
+    public CalculatorClass calculate(@RequestParam(name = "num1")int num1, @RequestParam(name = "num2") int num2, @RequestParam(name = "operation") String operation) {
+
+        return new CalculatorClass(num1, num2, operation);
     }
 
 }
