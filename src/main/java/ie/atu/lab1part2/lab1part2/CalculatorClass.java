@@ -29,4 +29,44 @@ public class CalculatorClass {
         this.result = result;
     }
 
+    public CalculatorClass(int num1, int num2, String operation) {
+        this.val1 = num1;
+        this.val2 = num2;
+
+        switch(operation) {
+            case "multiply":
+                this.result = num1 * num2;
+                break;
+
+            case "Multiply":
+                this.result = num1 * num2;
+                break;
+
+            case "Divide":
+                this.result = num1 / num2;
+                break;
+
+            case "divide":
+                this.result = num1 / num2;
+                break;
+
+            case "Add":
+                this.result = num1 + num2;
+                break;
+
+            case "add":
+                this.result = num1 + num2;
+                break;
+
+            case "Division":
+                this.result = num1 - num2;
+                break;
+
+            case "division":
+                this.result = num1 - num2;
+                break;
+        }
+
+    }
+
 }
