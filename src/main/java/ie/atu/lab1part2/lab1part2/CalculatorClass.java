@@ -28,4 +28,6 @@ public class CalculatorClass {
     public void setResult(int result) {
         this.result = result;
     }
+
+
 }
