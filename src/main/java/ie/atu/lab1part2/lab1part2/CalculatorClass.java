@@ -29,5 +29,4 @@ public class CalculatorClass {
         this.result = result;
     }
 
-
 }
