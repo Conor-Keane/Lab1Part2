@@ -69,4 +69,14 @@ public class CalculatorClass {
 
     }
 
+    @Override
+    public String toString() {
+        return "Calculator{" +
+                "ans = " + result +
+                "num1 = " + val1 +
+                "num2 = " + val2 +
+                "}";
+
+    }
+
 }
