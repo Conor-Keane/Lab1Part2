@@ -22,27 +22,20 @@ public class CalculatorClass {
         setVal2(num2);
 
         switch(operation) {
-            case "multiply":
 
             case "Multiply":
                 setResult(num1 * num2);
                 break;
 
-            case "Divide":
-
             case "divide":
                 setResult(num1 / num2);
                 break;
-
-            case "Add":
 
             case "add":
                 setResult(num1 + num2);
                 break;
 
-            case "subtraction":
-
-            case "Subtraction":
+            case "Subtract":
                 setResult(num1 - num2);
                 break;
         }
